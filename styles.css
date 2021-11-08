@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family:  sans-serif;
+}
+
+.calculator {
+    width: 450px;
+    margin: 100px auto;
+    background-color: black;
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px;
+    
+}
+
+.output{
+    font-size: 32px;
+    text-align: right;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: #fff;
+    font-size: 2.5rem;
+}
+.button-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding: 40px 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+    border-bottom: 2px solid #fff;
+
+}
+
+button{
+    padding: 25px 25px;
+    border-radius: 50%;
+    justify-content: center;
+    justify-items: center;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.grey-btn{
+    background-color: #A5A5A5;
+}
+
+.grey-btn:hover{
+    background-color: #838383;
+}
+
+.grey-btn:active{
+    background-color: #727171;
+}
+
+.orange-btn{
+    background-color: #FE9504;
+    color: #fff;
+}
+
+.orange-btn:hover{
+    background-color: #dd8100;
+}
+
+.orange-btn:active{
+    background-color: #b86b00;
+}
+
+.nums-btn{
+    background-color: #333333;
+    color: #fff;
+}
+
+.nums-btn:hover{
+    background-color: #292929;
+}
+
+.nums-btn:active{
+    background-color: #1d1d1d;
+}
+
+.span-two{
+    border-radius: 40px;
+    grid-column: span 2;
+}
